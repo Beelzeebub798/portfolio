@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourName — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+
+  <nav>
+    <a href="index.html" class="logo">YourName.</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire me</a>
+  </nav>
+
+  <section id="contact">
+    <div>
+      <span class="section-tag">Contact</span>
+      <h2>Let's work together.</h2>
+      <p>Have a project in mind or just want to say hello? Fill out the form or reach me through any of the channels below.</p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="contact-link">
+          <i class="ti ti-mail"></i> your@email.com
+        </a>
+        <a href="https://github.com/yourname" class="contact-link" target="_blank">
+          <i class="ti ti-brand-github"></i> github.com/yourname
+        </a>
+        <a href="https://linkedin.com/in/yourname" class="contact-link" target="_blank">
+          <i class="ti ti-brand-linkedin"></i> linkedin.com/in/yourname
+        </a>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <textarea name="message" placeholder="Tell me about your project..."></textarea>
+        <button type="submit" class="send-btn">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 <a href="index.html">YourName</a> — All rights reserved</span>
+    <div class="footer-socials">
+      <a href="https://github.com/yourname" target="_blank"><i class="ti ti-brand-github"></i></a>
+      <a href="https://linkedin.com/in/yourname" target="_blank"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="https://twitter.com/yourname" target="_blank"><i class="ti ti-brand-twitter"></i></a>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
