@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Fantasy Journey</title>
+
+  <!-- Google Fonts — ✏️ Change font families here if needed -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ✏️ Edit: Logo name, nav links, and language buttons
+       ============================================================ -->
+  <nav>
+    <div class="nav-logo">Your Name</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-lang">
+      <button class="lang-btn">日本語</button>
+      <button class="lang-btn active">English</button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ✏️ Edit: Main headline, subtitle text, and button labels/links
+       ============================================================ -->
+  <section id="hero">
+    <!-- Background elements (painterly sky + hills) -->
+    <div class="hero-sky"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="hills">
+      <div class="hill hill-1"></div>
+      <div class="hill hill-2"></div>
+      <div class="hill hill-3"></div>
+    </div>
+    <div class="path"></div>
+
+    <!-- ✏️ Edit the content inside this block -->
+    <div class="hero-content">
+
+      <!-- ── HERO PHOTO ──
+           ✏️ To add your photo:
+              1. Delete the entire .hero-photo-placeholder div below
+              2. Uncomment the <img> tag
+              3. Replace "your-photo.jpg" with the path or URL to your image -->
+      <div class="hero-photo-wrap">
+        <!-- <img src="your-photo.jpg" alt="Your Name" class="hero-photo"> -->
+        <div class="hero-photo-placeholder">
+          <span>🧑</span>
+          Add your<br>photo here
+        </div>
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-dot"></div>
+      </div>
+
+      <!-- ── HERO TEXT ── -->
+      <div class="hero-text">
+        <!-- ✏️ Edit the badge label -->
+        <div class="hero-tag">✦ Welcome to My World</div>
+
+        <!-- ✏️ Edit the main headline -->
+        <h1 class="hero-title">
+          Begin Your<br>Fantasy<br>Journey
+        </h1>
+
+        <!-- ✏️ Edit the subtitle -->
+        <p class="hero-subtitle">
+          The magical world<br>created by Your Name
+        </p>
+
+        <div class="hero-buttons">
+          <!-- ✏️ Change href="#projects" to link to any section or URL -->
+          <a href="#projects" class="btn-primary">Explore Works →</a>
+          <a href="#about" class="btn-secondary">Learn History</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      <span>↓</span>
+      scroll
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT ME SECTION
+       ✏️ Edit: Bio paragraphs and skill tags
+       ============================================================ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">About Me</div>
+      <!-- ✏️ Edit the heading below -->
+      <h2 class="section-title">A Dreamer &amp; Creator</h2>
+      <div class="section-divider"></div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;">
+        <!-- ✏️ Edit these paragraphs with your own bio -->
+        <div class="about-text">
+          <p>
+            Hello! I'm a passionate creator who loves crafting experiences that feel magical and meaningful. My work is inspired by the gentle beauty of nature and the power of storytelling.
+          </p>
+          <p>
+            I believe every project is a journey — one that starts with curiosity and ends with something that moves people. Welcome to my corner of the world.
+          </p>
+        </div>
+
+        <div>
+          <!-- ✏️ Add or remove skill tags as needed -->
+          <p style="font-size:0.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;">Skills &amp; Interests</p>
+          <div class="about-skills">
+            <span class="skill-tag">Design</span>
+            <span class="skill-tag">Development</span>
+            <span class="skill-tag">Illustration</span>
+            <span class="skill-tag">Storytelling</span>
+            <span class="skill-tag">Animation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ✏️ Edit: Add/remove/modify project cards below
+       Each .project-card block = one project
+       ============================================================ -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">My Work</div>
+      <!-- ✏️ Edit section heading -->
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-divider"></div>
+      <!-- ✏️ Edit the intro paragraph -->
+      <p style="color: var(--brown-mid); font-size:1rem; line-height:1.7; max-width:560px;">
+        A collection of things I've built, designed, and dreamed up — each one a small world of its own.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- ✏️ PROJECT CARD 1 — Duplicate this block to add more projects -->
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #c8e8f5, #8ab87a);">
+            🌊
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Web Design</div>
+            <!-- ✏️ Change project name, description, and link -->
+            <h3 class="project-title">Project One</h3>
+            <p class="project-desc">A beautiful web experience exploring the intersection of art and technology.</p>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- ✏️ PROJECT CARD 2 -->
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #f5ead8, #d4a843);">
+            🍃
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Illustration</div>
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-desc">A series of nature-inspired illustrations celebrating the quiet magic of the everyday.</p>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- ✏️ PROJECT CARD 3 -->
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #8ab87a, #3d6b3a);">
+            🏡
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Branding</div>
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-desc">Brand identity design for a studio that makes the world feel a little more like home.</p>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ✏️ Edit: Contact info (email, location, social) and form fields
+       ============================================================ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="section-label">Get In Touch</div>
+          <!-- ✏️ Edit heading -->
+          <h2 class="section-title">Let's Create<br>Together</h2>
+          <div class="section-divider"></div>
+          <!-- ✏️ Edit the intro paragraph -->
+          <p>
+            Whether you have a project idea, a collaboration in mind, or just want to say hello — I'd love to hear from you. Every great adventure begins with a single message.
+          </p>
+
+          <!-- ✏️ Edit email, location, and social link below -->
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <!-- ✏️ Replace with your email -->
+              <span>hello@yourname.com</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <!-- ✏️ Replace with your location -->
+              <span>Tokyo, Japan</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🌿</div>
+              <!-- ✏️ Replace with your social link -->
+              <a href="#" style="color: var(--cream);">@yourhandle</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✏️ Edit form fields — add/remove as needed -->
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Chihiro Ogino">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project or just say hi..."></textarea>
+          </div>
+          <!-- ✏️ Change button label if needed -->
+          <button class="btn-submit">Send Message ✦</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ✏️ Edit: Footer text and any links
+       ============================================================ -->
+  <footer>
+    <!-- ✏️ Edit copyright name and year -->
+    <p>© 2026 <a href="#">Your Name</a> — Crafted with ♡ and a bit of magic</p>
+  </footer>
+
+
+  <!-- JavaScript — loaded at end of body for best performance -->
+  <script src="main.js"></script>
+
+</body>
+</html>
