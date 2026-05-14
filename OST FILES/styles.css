@@ -577,6 +577,17 @@ section {
   font-weight: 600;
 }
 
+.btn-resume {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 6px 16px;
+  background: #2d6a2d;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* ============================================================
    PROJECTS SECTION — Edit project cards here
    ============================================================ */
@@ -650,6 +661,7 @@ section {
   align-items: center;
   gap: 4px;
 }
+
 
 .project-link:hover { text-decoration: underline; }
 
