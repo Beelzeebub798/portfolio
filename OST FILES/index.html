@@ -18,20 +18,32 @@
        ✏️ Edit: Logo name, nav links, and language buttons
        ============================================================ -->
   <nav>
-    <div class="nav-logo">My Portfolio</div>
+  <div class="nav-logo" data-en="My Portfolio" data-fil="Ang Aking Portfolio">My Portfolio</div>
 
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="#about" data-en="About" data-fil="Tungkol">About</a></li>
+    <li><a href="#projects" data-en="Projects" data-fil="Mga Proyekto">Projects</a></li>
+    <li><a href="#contact" data-en="Contact" data-fil="Makipag-ugnayan">Contact</a></li>
+  </ul>
 
-    <div class="nav-lang">
-      <button class="lang-btn">日本語</button>
-      <button class="lang-btn active">English</button>
-    </div>
-  </nav>
+  <div class="nav-lang">
+    <button class="lang-btn" onclick="setLanguage('fil')">Filipino</button>
+    <button class="lang-btn active" onclick="setLanguage('en')">English</button>
+  </div>
+</nav>
 
+<script>
+  function setLanguage(lang) {
+    // Update active button
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Translate all elements with data attributes
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+  }
+</script>
 
   <!-- ============================================================
        HERO SECTION
