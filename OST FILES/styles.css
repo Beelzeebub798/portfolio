@@ -378,6 +378,66 @@ nav {
   50%       { transform: translateX(-50%) translateY(8px); }
 }
 
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-greeting {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d6a2d;
+  margin: 0;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  color: #444;
+  margin: 0;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  color: #666;
+  max-width: 400px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #2d6a2d;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  border: 2px solid #2d6a2d;
+  color: #2d6a2d;
+  padding: 10px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* ============================================================
    SHARED SECTION STYLES
    ============================================================ */
