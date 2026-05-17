@@ -98,49 +98,49 @@ nav {
    HERO SECTION — Edit headline, subtitle, and button text here
    ============================================================ */
 #hero {
-  min-height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 48px 80px;
   overflow: hidden;
+  background: linear-gradient(180deg, #b8dff0 0%, #d4efc4 60%, #5a8a3c 100%);
 }
-
-/* Painterly sky background */
-.hero-sky {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    #c8e8f5 0%,
-    #a8d8ee 30%,
-    #b8e0b8 65%,
-    #8ab860 80%,
-    #c8a840 100%
-  );
-  z-index: 0;
-}
-
-/* Floating cloud shapes */
 .cloud {
   position: absolute;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.75);
-  filter: blur(18px);
-  z-index: 1;
-  animation: drift linear infinite;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.75;
+  filter: blur(6px);
+  animation: moveClouds linear infinite;
 }
-.cloud-1 { width: 200px; height: 90px; top: 14%; left: -5%; animation-duration: 28s; }
-.cloud-2 { width: 280px; height: 110px; top: 20%; right: -8%; animation-duration: 35s; animation-delay: -10s; }
-.cloud-3 { width: 160px; height: 70px; top: 35%; left: 10%; animation-duration: 22s; animation-delay: -5s; }
-.cloud-4 { width: 240px; height: 100px; top: 10%; left: 35%; animation-duration: 40s; animation-delay: -18s; }
 
-@keyframes drift {
-  0%   { transform: translateX(0); }
-  50%  { transform: translateX(40px); }
-  100% { transform: translateX(0); }
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 60%;
+  height: 150%;
+  top: -40%;
+  left: 15%;
+}
+
+.cloud::after {
+  width: 40%;
+  height: 130%;
+  top: -30%;
+  left: 50%;
+}
+
+.cloud-1 { width: 200px; height: 80px;  top: 8%;  animation-duration: 30s; animation-delay: 0s; }
+.cloud-2 { width: 150px; height: 60px;  top: 18%; animation-duration: 45s; animation-delay: -10s; }
+.cloud-3 { width: 260px; height: 104px; top: 5%;  animation-duration: 38s; animation-delay: -20s; }
+.cloud-4 { width: 180px; height: 72px;  top: 25%; animation-duration: 50s; animation-delay: -5s; }
+
+@keyframes moveClouds {
+  from { transform: translateX(-300px); }
+  to   { transform: translateX(110vw); }
 }
 
 /* Rolling hills */
