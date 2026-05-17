@@ -588,6 +588,58 @@ section {
   font-weight: bold;
 }
 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-flip {
+  width: 120px;
+  height: 40px;
+  perspective: 600px;
+  cursor: pointer;
+}
+
+.skill-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.skill-flip:hover .skill-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-front,
+.skill-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(90,138,86,0.4);
+}
+
+.skill-front {
+  background: white;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.skill-back {
+  background: var(--green-dark);
+  color: white;
+  font-size: 1.3rem;
+  transform: rotateY(180deg);
+}
 /* ============================================================
    PROJECTS SECTION — Edit project cards here
    ============================================================ */
