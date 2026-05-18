@@ -30,6 +30,8 @@
     <button class="lang-btn" onclick="setLanguage('fil')">Filipino</button>
     <button class="lang-btn active" onclick="setLanguage('en')">English</button>
   </div>
+
+  <button id="dark-mode-btn" onclick="toggleDarkMode()">🌙</button>
 </nav>
 
 <script>
@@ -43,6 +45,27 @@
       el.textContent = el.getAttribute('data-' + lang);
     });
   }
+
+  function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  const btn = document.getElementById('dark-mode-btn');
+
+  if (document.body.classList.contains('dark')) {
+    btn.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    btn.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// Remember user's preference on page reload
+window.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    document.getElementById('dark-mode-btn').textContent = '☀️';
+  }
+});
 </script>
 
   <!-- ============================================================

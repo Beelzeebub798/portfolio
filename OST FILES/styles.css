@@ -874,3 +874,208 @@ footer a {
   .contact-grid { grid-template-columns: 1fr; }
   .about-image-wrap { max-width: 280px; margin: 0 auto; }
 }
+
+/* Dark mode toggle button */
+#dark-mode-btn {
+  background: transparent;
+  border: 2px solid var(--green-dark);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#dark-mode-btn:hover {
+  background: var(--green-dark);
+}
+
+/* Darken the backgrounds */
+body.dark {
+  background-color: #0f1a0e !important;
+}
+
+body.dark #hero {
+  background: linear-gradient(180deg, #0a1628 0%, #0f2d1a 60%, #1a3a0e 100%) !important;
+}
+
+body.dark .hero-sky {
+  background: #0a1628 !important;
+}
+
+body.dark .hill,
+body.dark .hill-1,
+body.dark .hill-2,
+body.dark .hill-3 {
+  background: #1a3a0e !important;
+  filter: brightness(0.4);
+}
+
+body.dark nav {
+  background: rgba(10, 20, 10, 0.95) !important;
+}
+
+body.dark #about,
+body.dark #projects,
+body.dark #contact,
+body.dark section {
+  background: #0f1a0e !important;
+}
+
+body.dark .path {
+  filter: brightness(0.3);
+}
+
+/* Dark mode styles */
+/* All text becomes readable in dark mode */
+body.dark,
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark span,
+body.dark a,
+body.dark li,
+body.dark label,
+body.dark div,
+body.dark .section-title,
+body.dark .section-label,
+body.dark .section-divider,
+body.dark .project-title,
+body.dark .project-desc,
+body.dark .project-tag,
+body.dark .project-link,
+body.dark .hero-name,
+body.dark .hero-title,
+body.dark .hero-desc,
+body.dark .skill-front,
+body.dark nav a,
+body.dark footer {
+  color: #d4e8d0 !important;
+  text-shadow: 0 0 8px rgba(100, 220, 100, 0.8),
+               0 0 20px rgba(80, 200, 80, 0.5),
+               0 0 40px rgba(60, 180, 60, 0.3);
+}
+
+/* Back to normal in light mode */
+body:not(.dark) p,
+body:not(.dark) h1,
+body:not(.dark) h2,
+body:not(.dark) h3,
+body:not(.dark) span,
+body:not(.dark) a,
+body:not(.dark) div {
+  color: unset !important;
+  text-shadow: none !important;
+}
+
+* {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              text-shadow 0.3s ease;
+}
+
+/* ===== DARK MODE FIXES ===== */
+
+body.dark .project-card {
+  background: #1a2e18 !important;
+  border: 1px solid rgba(100, 200, 100, 0.3) !important;
+}
+
+body.dark * {
+  color: #e8f5e8 !important;
+  text-shadow: 0 0 6px rgba(100, 220, 100, 0.4) !important;
+}
+
+body.dark .project-tag,
+body.dark .section-label {
+  color: #90d490 !important;
+  text-shadow: none !important;
+}
+
+body.dark .project-desc,
+body.dark p {
+  color: #c8e8c8 !important;
+  text-shadow: none !important;
+}
+
+body.dark .project-title,
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(100, 220, 100, 0.5) !important;
+}
+
+/* ===== DARK MODE BUTTON & ELEMENT FIXES ===== */
+
+/* Primary buttons */
+body.dark .btn-primary {
+  background: #2d5a27 !important;
+  color: #e8f5e8 !important;
+  text-shadow: none !important;
+}
+
+/* Secondary/outline buttons */
+body.dark .btn-secondary,
+body.dark .btn-resume {
+  background: #1a2e18 !important;
+  color: #e8f5e8 !important;
+  border-color: rgba(100, 200, 100, 0.5) !important;
+  text-shadow: none !important;
+}
+
+/* Skill flip buttons */
+body.dark .skill-front {
+  background: #1a2e18 !important;
+  color: #e8f5e8 !important;
+  border-color: rgba(100, 200, 100, 0.4) !important;
+  text-shadow: none !important;
+}
+
+body.dark .skill-back {
+  background: #2d5a27 !important;
+}
+
+/* Contact form */
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background: #1a2e18 !important;
+  color: #e8f5e8 !important;
+  border-color: rgba(100, 200, 100, 0.3) !important;
+}
+
+body.dark .btn-submit {
+  background: #2d5a27 !important;
+  color: #e8f5e8 !important;
+  text-shadow: none !important;
+}
+
+/* Nav buttons */
+body.dark .lang-btn {
+  background: #1a2e18 !important;
+  color: #e8f5e8 !important;
+  border-color: rgba(100, 200, 100, 0.4) !important;
+  text-shadow: none !important;
+}
+
+body.dark .lang-btn.active {
+  background: #2d5a27 !important;
+}
+
+/* Section label */
+body.dark .section-label {
+  background: transparent !important;
+  color: #90d490 !important;
+  text-shadow: none !important;
+}
+
+/* Inline color styles override */
+body.dark [style*="color: var(--brown-mid)"],
+body.dark [style*="color:var(--brown-mid)"] {
+  color: #c8e8c8 !important;
+}
